@@ -21,8 +21,7 @@ nicer functions and macros that can use keywords and maps
    ;; a person 
    nils (vertex { :name "Nils" :email "some@something" })
    bert (vertex { :name "Bert" :email "bert@something" })
-   
-   ;; note you can also asign a id to a vertex
+
    bossy (vertex { :name "BossyBoss" :email "theboss@something" })]
    
    ;; create some relationshipp's
@@ -44,7 +43,7 @@ nicer functions and macros that can use keywords and maps
 
 (edges vert) ;; all edges of a vertex
 (id vert) ;; gets the id of a element
-(from-direction edge) ;; gets you the vertex in the direction :out /
+(from-direction edge :in) ;; gets you the vertex in the direction :out /
 :in
 (fields element) ;; a map of the fields in the element
 (with-transaction
