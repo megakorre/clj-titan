@@ -111,6 +111,10 @@ src/main/java/com/tinkerpop/blueprints/Vertex.java"
   [id]
   (.getVertex *graph* id))
 
+(defn all-vertices
+  []
+  (.getVerices *graph*))
+
 (defn data-dispatch
   [thing]
   (cond
